@@ -1,5 +1,5 @@
 .center{
-    margin-left: 30%;
+    margin-left: 25%;
     float: left;
 
 }
@@ -98,3 +98,14 @@ p{
     font-family: inter,-apple-system,BlinkMacSystemFont,helvetica neue,pingfang sc,hiragino sans gb,STHeiti,microsoft yahei,wenquanyi micro hei,Arial,Verdana,sans-serif;
 }
 
+@media all and (max-width: 1500px){
+    .center{
+        margin-left: 20%;
+    }
+    .image{
+        margin-right: 25%;
+    }
+    .socials{
+        margin-left: 22.5%;
+    }
+}
