@@ -3,7 +3,7 @@ from gridObj import grids
 import pygame
 import pygame.freetype
 import random
-class blah:
+class main:
     def __init__(self):
         global size, rows, distanceBtwRows
         size = 500
@@ -54,7 +54,7 @@ class blah:
         distanceBtwRows = size // rows
         #add relative path below
         print(filepath)
-        dieFive = pygame.image.load("/home/gaurav/Desktop/RiskOfRain2/RiskOfRain2/spotthedifference/SpotTheDifference/images/" + filepath)
+        dieFive = pygame.image.load("spotthedifference/SpotTheDifference/images/" + filepath)
         dieFive = pygame.transform.scale(dieFive, (int(distanceBtwRows *.95), int(distanceBtwRows * .95)))
         window.blit(dieFive, (x, y))
 
@@ -153,4 +153,4 @@ class blah:
         pygame.display.flip()
         clock.tick(10)
 
-m = blah()
+m = main()
