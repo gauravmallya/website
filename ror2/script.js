@@ -9,53 +9,137 @@ const updateCharacter = (update) =>{
 const Acrid = new Character(
     "Acrid",
     160,
-    "2.5/s",
+    2.5,
     15,
-    20
+    20,
+    48,
+    0.5,
+    3
 );
 
 const Artificer = new Character(
     "Artificer",
     110,
-    "1/s",
+    1,
     12,
-    0
+    0,
+    33,
+    0.2,
+    2.4
 )
 
 const Bandit = new Character(
-    "Artificer",
+    "Bandit",
     110,
-    "1/s",
+    1,
     12,
-    0
+    0,
+    33,
+    0.2,
+    2.4
 )
 
-const Artificer = new Character(
-    "Artificer",
+const Captain = new Character(
+    "Captain",
     110,
-    "1/s",
+    1,
     12,
-    0
+    0,
+    33,
+    0.2,
+    2.4
 )
 
-const Artificer = new Character(
-    "Artificer",
+const Commando = new Character(
+    "Commando",
     110,
-    "1/s",
+    1,
     12,
-    0
+    0,
+    33,
+    0.2,
+    2.4
 )
 
-const Artificer = new Character(
-    "Artificer",
-    110,
-    "1/s",
+const Engineer = new Character(
+    "Engineer",
+    130,
+    1,
+    14,
+    0,
+    39,
+    0.2,
+    2.8
+)
+
+const Heritic = new Character(
+    "Heritic",
+    440,
+    -6,
+    14,
+    0,
+    132,
+    -1.2,
+    3.6
+)
+
+const Huntress = new Character(
+    "Huntress",
+    90,
+    1,
     12,
-    0
+    0,
+    27,
+    0.2,
+    2.4
+)
+
+const Loader = new Character(
+    "Loader",
+    160,
+    2.5,
+    12,
+    20,
+    48,
+    0.5,
+    2.4
+)
+
+const Mercenary = new Character(
+    "Mercenary",
+    110,
+    1,
+    12,
+    0,
+    33,
+    0.2,
+    2.4
+)
+const Mult = new Character(
+    "MUL-T",
+    200,
+    1,
+    11,
+    12,
+    60,
+    0.2,
+    2.2
+)
+
+const Rex = new Character(
+    "REX",
+    130,
+    1,
+    12,
+    20,
+    39,
+    0.2,
+    2.4
 )
 
 
-const characters = [Acrid, Artificer]
+
+const characters = [Acrid, Artificer, Bandit, Captain, Commando, Engineer, Heritic, Huntress, Loader, Mercenary, Mult, Rex]
 
 const markup = (character) => {
     return `
@@ -71,13 +155,23 @@ const markup = (character) => {
 `;
 };
 
-console.log("Acrid:", characters[0])
-console.log("Artificer:", characters[1])
-const c1 = document.createElement("char1");
-const c2 = document.createElement("char2");
-c1.innerHTML = markup(characters[0]);
-c2.innerHTML = markup(characters[1]);
+var path = window.location.pathname
+var page = path.split("/").pop();
+var name = page.split(".")[0]
 
+function findIndex(name){
+    for (let i = 0; i < characters.length; i++) {
+        const char = characters[i];
+        if (name == char.name){
+            return i;
+        }
+    }
+}
 
+var index = findIndex(name);
+console.log(name + " :", characters[index])
+
+const c1 = document.createElement("char");
+c1.innerHTML = markup(characters[index]);
 document.body.appendChild(c1);
-document.body.appendChild(c2);
+

@@ -23,7 +23,7 @@ li:hover{
 }
 
 #port{
-    height: 600px;
+    height: 450px;
 
 }
 
@@ -103,9 +103,13 @@ p{
         margin-left: 20%;
     }
     .image{
-        margin-right: 25%;
+        margin-right: 30%;
     }
     .socials{
         margin-left: 22.5%;
     }
+    .bio{
+        margin: 0 25%;
+    }
+    
 }

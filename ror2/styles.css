@@ -338,3 +338,6 @@ list{
     -webkit-text-stroke-color: teal;
     padding-left: 5%;
 }
+char{
+    color: white
+}
