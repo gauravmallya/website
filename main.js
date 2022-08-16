@@ -7,7 +7,14 @@ var images = [
 
 function randImg() {
     var size = images.length
-    var x = Math.floor(size * Math.random())
+    var y = Math.random()
+    var x
+    if (y <= .5) {
+        x = 0
+    }
+    else{
+        x = Math.floor(size * Math.random())
+    } 
     document.getElementById('imagefile').src = images[x];
 }
 
