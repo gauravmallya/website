@@ -32,17 +32,21 @@ html {
 body {
     background-color: #fff;
     padding: 50px;
-    font-family: var(--font-serif);
+    font-family: Cabin, sans-serif;
+    color:#4e5052;
     font-feature-settings: 'onum' 1;
     line-height: 1.5;
-    color: var(--color-default);
-    font-weight: 400;
 }
 
 .center {
-    margin-left: 30%;
     float: left;
+    text-align: center;
     position:relative;
+    height: auto;
+    border: 1px solid var(--color-dim);
+    border-width: 0px 1px 0px 0px;
+    padding: 0 6%;
+
 }
 
 
@@ -52,26 +56,25 @@ ul {
     width: 100%;
     text-decoration: none;
     padding: 0;
-    margin-left: 5%;
     padding-top: 5px;
+    margin: 0;
+
 }
 
 li {
-    margin:10px 0;
-
+    margin: 10px 20px;
+    font-size: 16px;
+    border: 1px groove var(--color-dim);
+    border-width: 1px 0px 1px 0px;
+    border-style:double;
+    padding: 2.5px;
+    border-color:rgba(0,0,0,.1);
 }
 
-a {
-    color: rgb(77, 72, 72)
-}
-
-.bio {
-    border: 1px solid var(--color-dim);
-    border-width: 1px 0;
-}
 
 .bio p {
-    font-size: 18px;
+    font-size: 16.5px;
+    font-weight: 500;
 }
 
 .center p {
@@ -83,9 +86,13 @@ a {
 }
 
 #name {
-    font-size: 26px;
-    color: #242120;
-    font-family: Bookman, URW Bookman L, serif;
+    font-size: 24px;
+    color: #4a5568;
+    font-weight: 550;
+}
+
+#name:hover {
+    color: rgb(53, 154, 221);
 }
 
 .container {
@@ -96,7 +103,6 @@ a {
 .image {
     display: block;
     float: right;
-    margin-right: 30%;
     padding-bottom: 25px;
     position: relative;
 }
@@ -107,25 +113,22 @@ a {
 
 
 .bio {
-    display: block;
-    float: left;
-    padding-top: 10px;
-    margin: 0 31%;
+    float: right;
+    margin: 0 6%;    
 }
 
 .bio p {
     word-spacing: .25mm;
-    color: rgb(41, 35, 35)
 }
 
 
 .sm {
-    font-size: 17px;
+    font-size: 16px;
     color: rgb(77, 72, 72);
 }
 
-.sm:hover{
-    color: navy;
+.sm:hover {
+    color: rgb(53, 154, 221);
 }
 
 .mail:hover .fa-envelope:before {
@@ -153,21 +156,11 @@ a {
 
 .overview {
     width: 1150px;
+    display: flex;
     margin: auto;
 }
 
-@media all and (max-width: 1500px) {
-    .center {
-        margin-left: 30%;
-    }
 
-    .image {
-        margin-right: 32.5%;
-    }
-    .bio {
-        margin: 0 23%;
-    }
-}
 
 @media print, screen and (max-width: 1200px) {
     .overview{
@@ -177,23 +170,33 @@ a {
 
 @media print, screen and (max-width: 1020px) {
     .center {
-        text-align: center;
-        margin-left: 0%;
-        float:none;
+        border: 1px solid var(--color-dim);
+        border-width: 0px 0px 1px 0px;
+        float: none;
     }
-    .image {
-        text-align: center;
-        float:none;
-        margin-right: 0%;
-        padding-bottom: 10px;
+    .overview{
+        display: block;
     }
     ul {
         padding-top: 0px;
         margin-left: 0%;
     }
     .bio {
-        padding-top: 10px;
-        margin: 0 8%;
+        margin: 0 4%;
+        float: none;
+    }
+    .bio p {
+        font-size: 15px;
+    }
+    .sm  {
+        font-size: 14px;
+    }
+    img {
+        height: 250px;
+        width: auto;
+    }
+    li {
+        margin: 4px 20px;
     }
   }
 

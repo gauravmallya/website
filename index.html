@@ -8,15 +8,16 @@
 </head>
 <body>
     <div class = "overview">
-        <div class="image">
-            <picture>
-                <img id = "imagefile" height="250" src="files/portrait.jpg" alt="profile-picture">
-            </picture>
-        </div>
         <div class="center">
-            <p id="name" href="/">Gaurav Mallya</p>
+            <a href="/"><p id="name">Gaurav Mallya</p></a>
             <p>CS @ UC Berkeley</p>
-            <ul>
+            <a href="/">
+                <picture>
+                    <img id = "imagefile" width="250" src="files/portrait.jpg" alt="profile-picture">
+                </picture>
+            </a>
+            <p>            
+                <ul>
                 <li> <a class="sm" href="https://www.linkedin.com/in/gaurav-mallya/">
                         <i class="fab fa-linkedin-in"></i> &nbspLinkedIn
                     </a></li>
@@ -25,7 +26,7 @@
                         <i class="fab fa-github"></i> GitHub
                     </a>
                 </li>
-                <li> <a class="sm mail" href="files/GauravMallyaResume2023.pdf">
+                <li> <a class="sm mail" href="files/GauravMallyaResume2024.pdf">
                         <i class="fas fa-file"></i>  &nbspResume
                     </a></li>
                 <li>
@@ -33,40 +34,41 @@
                         <i class="fas fa-envelope"></i> Contact Me
                     </a>
                 </li>
-            </ul>
+                </ul>
+            </p>
+        </div>
+        <div class="bio">
+            <h3> Welcome to my page!</h3>
+            <p>
+                My name is Gaurav Mallya, and I am a senior studying Computer Science at the <a
+                    style="color:navy" href="https://www.berkeley.edu/">University of California, Berkeley</a>. I am 
+                    always seeking to explore and learn the many fields within Computer Science and am currently interested in
+                software development, computer security, and machine learning. (<a href= "/courses"><i>Relevant Coursework</i></a>)</p>
+            <p> <strong>Summer 2023:</strong> Interned at <a style="color: rgb(32, 14, 228)" href="https://benchling.com/">Benchling</a> where I work on the Workflows team to develop
+                a new  end-to-end flowchart feature called Chained Routers. Furthermore, I implemented a back-end API to speed up configuration by allowing users to clone Workflows task schemas.</p>
+            <p> <strong>Summer 2022:</strong> Worked at <a style="color: rgb(13, 4, 107)" href="https://plateiq.com/">Plate IQ</a> where I
+            created a Django rules validation engine that ensures that invoices follow vendor group specifications.</p>
+            <p> <strong>Spring 2022:</strong> Took a gap semeseter to work as a Software Engineer Intern on the Material Flow System at <a style="color:red"
+                href="https://www.tesla.com/">Tesla</a>. Here, I added full-stack features using 
+                <a style="color: rgb(53, 154, 221)" href="https://golang.org/">Golang</a> and
+                refactored the existing MySQL databases. The new features and refactoring have since been directly pushed into production and are 
+                currently being used by <a style="color: purple" href="https://www.tesla.com/gigafactory ">gigafactories</a> across the globe.
+            </p>
+            <p><strong>Summer 2021:</strong> Interned at Panoramic Computing where I created backend tests using <a style="color: rgb(53, 154, 221)"
+                    href="https://golang.org/">Golang</a> to test
+                backend handlers via integration tests and simulating a live handler. 
+            </p>
+            <p>In my spare time, you'll find me dancing with <a style="color: rgb(157, 134, 5)"
+                    href="https://www.youtube.com/watch?v=jW14f0PRChw">
+                    UCB Zahanat</a> or playing the <a style="color: rgb(117, 117, 117)" href="https://youtu.be/w0PsDyq_rJ0">
+                    drums</a> for class projects :P</p>
+            <p>Please feel free to contact me at <a href="mailto:gmallya@berkeley.edu">gmallya@berkeley.edu</a>.</p>
+            <p>&emsp;</p>
         </div>
     </div>
-    <div class="bio">
-        <p> Hi there! My name is Gaurav Mallya, and I am a rising junior studying Computer Science at the <a
-                style="color:navy" href="https://www.berkeley.edu/">University of California, Berkeley</a>. Currently, I am interested in
-            software development, computer security, and machine learning, however I am 
-            always seeking to explore and learn the many fields within Computer Science.</p>
-        <p> This summer, I am currently working at <a style="color: rgb(13, 4, 107)" href="https://plateiq.com/">Plate IQ</a> where I am
-        creating a Django rules validation engine that ensures that invoices follow vendor group specifications.</p>
-        <p> Last spring, I took a gap semeseter to work as a Software Engineer Intern on the Material Flow System at <a style="color:red"
-            href="https://www.tesla.com/">Tesla</a>. Here, I added full-stack features using 
-            <a style="color: rgb(53, 154, 221)" href="https://golang.org/">Golang</a> and
-            refactored the existing MySQL databases. The new features and refactoring have since been directly pushed into production and are 
-            currently being used by <a style="color: purple" href="https://www.tesla.com/gigafactory ">gigafactories</a> across the globe.
-        </p>
-        <p>Over the Summer of 2021, I interned at Panoramic Computing where I learned the ins and outs of frontend and
-            backend programming.
-            Specifically, I created backend tests using <a style="color: rgb(53, 154, 221)"
-                href="https://golang.org/">Golang</a> to test
-            backend handlers via integration test and simulating a live handler. Furthermore, I created the
-            following projects:
-            Spot The Difference and Risk of Rain 2 to learn and sharpen my skills in Python, JavaScript and Web
-            Development.
-        </p>
-        <p>In my spare time, you'll find me dancing with <a style="color: rgb(245, 212, 22)"
-                href="https://www.youtube.com/watch?v=QvPuDUVSlWY">
-                UCB Zahanat</a> or playing the <a style="color: rgb(117, 117, 117)" href="https://youtu.be/w0PsDyq_rJ0">
-                drums</a> for class projects :P</p>
-        <p>Please feel free to contact me at <a href="mailto:gmallya@berkeley.edu">gmallya@berkeley.edu</a></p>
-        <p>&emsp;</p>
-    </div>
+    
     <div class="footer">
-        <p><i class="far fa-copyright"></i>2022 Gaurav Mallya</p>
+        <p><i class="far fa-copyright"></i>2023 Gaurav Mallya</p>
     </div>
     <script src="main.js"></script>
 </body>
